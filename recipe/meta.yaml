@@ -1,5 +1,5 @@
 {% set name = "ndonnx" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ndonnx-{{ version }}.tar.gz
-  sha256: 5bbc7298d4afd209d324bf313704be42a06e90d6f42880cfe321cdf520870cce
+  sha256: f40bacbdd4e2e02b8fb799c18f52a3b53d28fa800651ee316934983e144f7ad9
 
 build:
   noarch: python
