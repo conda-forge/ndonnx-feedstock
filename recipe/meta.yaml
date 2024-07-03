@@ -26,6 +26,7 @@ requirements:
     - numpy
     - spox >=0.10
     - typing-extensions
+    - onnx
 
 test:
   imports:
