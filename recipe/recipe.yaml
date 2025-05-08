@@ -1,13 +1,13 @@
 context:
-  version: 0.10.1
+  version: "0.11.0"
 
 package:
   name: ndonnx
   version: ${{ version }}
 
 source:
-- url: https://pypi.org/packages/source/n/ndonnx/ndonnx-${{ version }}.tar.gz
-  sha256: ed9dd4fedf7c36f43b511c310fbce2c8a8add8b8d90ba45ed04a48fcfb0929d7
+  - url: https://pypi.org/packages/source/n/ndonnx/ndonnx-${{ version }}.tar.gz
+    sha256: 4a35f354cb554d1006461eab715b16ad74c09894cbc3f8e656a02d1261098d31
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -16,22 +16,22 @@ build:
 
 requirements:
   host:
-  - python >=3.10
-  - setuptools
-  - setuptools-scm
-  - pip
+    - python >=3.10
+    - setuptools
+    - setuptools-scm
+    - pip
   run:
-  - python >=3.10
-  - numpy
-  - onnx
-  - spox >=0.10
-  - typing-extensions
+    - python >=3.10
+    - numpy
+    - onnx
+    - spox >=0.10
+    - typing-extensions
 
 tests:
-- python:
-    imports:
-    - ndonnx
-    pip_check: true
+  - python:
+      imports:
+        - ndonnx
+      pip_check: true
 
 about:
   homepage: https://github.com/quantco/ndonnx
