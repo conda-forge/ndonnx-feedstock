@@ -29,6 +29,7 @@ requirements:
 
 tests:
   - python:
+      python_version: ${{ python_min }}.*
       imports:
         - ndonnx
       pip_check: true
