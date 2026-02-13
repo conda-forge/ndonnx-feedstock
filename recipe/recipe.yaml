@@ -1,5 +1,5 @@
 context:
-  version: "0.17.1"
+  version: "0.17.2"
 
 package:
   name: ndonnx
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/n/ndonnx/ndonnx-${{ version }}.tar.gz
-    sha256: a60dd523dbe4f8d1d4b8f7230f01fd38f3f73c8b02428d938cb0562787daa924
+    sha256: c03d58741fed2caf19c9257823b8c1e1b7048cfeadd98f0567b6448862604d8e
 
 build:
   script: ${{ PYTHON }} -m pip install .
