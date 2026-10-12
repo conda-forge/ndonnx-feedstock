@@ -12,7 +12,7 @@ source:
 build:
   script: ${{ PYTHON }} -m pip install .
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,10 +22,13 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - numpy
-    - onnx
-    - spox >=0.10
+    - numpy >=2
+    - onnx >=1.16
+    - spox >=0.17
     - typing-extensions
+  run_constraints:
+    - onnxruntime >=1.26.0
+    - onnxruntime-novec >=1.26.0
 
 tests:
   - python:
